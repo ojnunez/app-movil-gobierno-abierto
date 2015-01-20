@@ -1,0 +1,37 @@
+  <div class="form-wrapper">
+    <form method="get" id="service-vehicle" class="form-horizontal">
+      <legend class="form-description">Denuncie veh&iacute;culos nacionales en presunto mal uso.</legend>
+      <div class="form-group">
+        <input type="text" class="form-control" name="denouncement[plate]" id="denouncement_plate" placeholder="N de placas">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="denouncement[place]" id="denouncement_place" placeholder="Lugar donde le encontr&oacute;">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="denouncement[complaint_date]" id="denouncement_complaint_date" placeholder="Fecha del hecho">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" name="denouncement[comment]" id="denouncement_comment" placeholder="Comentario"></textarea>
+      </div>
+      <div class="content">
+        <div class="action-area ch50">
+          <button class="button dh" id="getPhotoFromLibraryButton">Agregar Fotograf&iacute;a</button>
+        </div>
+        <div class="result-area ch50">
+          <div class="results">
+            <div class="desc"></div>
+            <img style="display:none;margin:5px auto;" id="smallImage" src="" />
+          </div>
+        <div class="separator"></div>
+        <div id="test">
+          <canvas id="vehicle_image"/>
+        </div>
+        </div>
+      </div>
+      
+        <div class="center">
+          <input id="submit-form" class="btn btn-submit" type="submit" value="Enviar Denuncia">
+        </div>
+      </div>
+    </form>
+  </div>

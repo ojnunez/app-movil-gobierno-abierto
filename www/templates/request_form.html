@@ -1,0 +1,303 @@
+<div class="form-wrapper">       
+  <form action="" method="post" id="information_request" class="form-horizontal">
+    <fieldset>
+      <legend class="form-description" id="s1">
+        &iquest;Qu&eacute; solicitar&aacute;?
+      </legend>
+      <!--<p>Solicite información en cualquier institución del Órgano Ejecutivo haciendo uso de la Ley de Acceso a la Información Pública (LAIP)</p>-->
+      <div class="form-group">
+        <textarea class="form-control" id="requested_information" name="information_request[requested_information]" placeholder="Informaci&oacute;n Solicitada" required></textarea>
+      </div>
+      <div class="form-group">
+        <select id="institution_id" class="form-control input-xlarge" name="information_request[institution_id]" required>
+          <option value="">-- Instituci&oacute;n --</option>
+          <option value="118">- No se a qué institución enviar mi solicitud -</option>
+          <option value="13">Academia Nacional de Seguridad Pública</option>
+          <option value="48">Administración Nacional de Acueductos y Alcantarillados</option>
+          <option value="51">Autoridad de Aviación Civil de El Salvador</option>
+          <option value="54">Autoridad Marítima Portuaria</option>
+          <option value="73">Banco Central de Reserva de El Salvador</option>
+          <option value="70">Banco de Desarrollo de El Salvador</option>
+          <option value="72">Banco de Fomento Agropecuario</option>
+          <option value="17">Caja Mutual de los Empleados del Ministerio de Educación</option>
+          <option value="59">Centro Farmacéutico de la Fuerza Armada</option>
+          <option value="30">Centro Internacional de Ferias y Convenciones</option>
+          <option value="39">Centro Nacional de Registros</option>
+          <option value="45">Centro Nacional de Tecnología Agrícola y Forestal, Enrique Álvarez Córdova</option>
+          <option value="34">Comisión Ejecutiva Hidroeléctrica del Río Lempa</option>
+          <option value="50">Comision Ejecutiva Portuaria Autonoma</option>
+          <option value="42">Comisión Nacional de la Micro y Pequeña Empresa</option>
+          <option value="32">Consejo de Vigilancia de la Profesión de Contaduría Pública y Auditoría</option>
+          <option value="74">Consejo Nacional de Atención Integral a la Persona con Discapacidad</option>
+          <option value="75">Consejo Nacional de Calidad</option>
+          <option value="31">Consejo Nacional de Ciencia y Tecnología</option>
+          <option value="65">Consejo Nacional de Energía</option>
+          <option value="19">Consejo Nacional de la Niñez y de la Adolescencia</option>
+          <option value="33">Consejo Salvadoreño del Café</option>
+          <option value="21">Consejo Superior de Salud Pública</option>
+          <option value="38">Corporación Salvadoreña de Inversiones</option>
+          <option value="35">Corporación Salvadoreña de Turismo</option>
+          <option value="41">Defensoría del Consumidor</option>
+          <option value="68">Dirección General de Centros Penales</option>
+          <option value="62">Dirección General de Migración y Extranjería</option>
+          <option value="76">Dirección Nacional de Medicamentos</option>
+          <option value="46">Escuela Nacional de Agricultura</option>
+          <option value="56">Fondo Ambiental de El Salvador</option>
+          <option value="53">Fondo de Conservación Víal</option>
+          <option value="4">Fondo de Inversión Nacional en Electrificación y Telefonía / Fondo de Inversión Social para el Desarrollo Local de El Salvador</option>
+          <option value="28">Fondo de Proteccion de Lisiados y Discapacitados a Consecuencia del Conflicto Armado</option>
+          <option value="64">Fondo de Saneamiento y Fortalecimiento Financiero</option>
+          <option value="63">Fondo Especial de los Recursos provenientes de la Privatización de ANTEL</option>
+          <option value="52">Fondo Nacional de Vivienda Popular</option>
+          <option value="199">Fondo para la Atención a las Víctimas de Accidentes de Tránsito</option>
+          <option value="61">Fondo Salvadoreño para Estudios de Preinversión</option>
+          <option value="49">Fondo Social para la Vivienda</option>
+          <option value="5">Fondo Solidario para la Familia Microempresaria</option>
+          <option value="23">Fondo Solidario para la Salud</option>
+          <option value="66">Instituto de Garantía de Depósitos</option>
+          <option value="60">Instituto de Legalización de la Propiedad</option>
+          <option value="69">Instituto de Previsión Social de la Fuerza Armada</option>
+          <option value="170">Instituto Especializado de Educación Superior para la Formación Diplomática</option>
+          <option value="2">Instituto Nacional de los Deportes de El Salvador</option>
+          <option value="8">Instituto Nacional de Pensiones de los Empleados Públicos</option>
+          <option value="71">Instituto Salvadoreño de Bienestar Magisterial</option>
+          <option value="12">Instituto Salvadoreño de Desarrollo Municipal</option>
+          <option value="25">Instituto Salvadoreño de Fomento Cooperativo</option>
+          <option value="26">Instituto Salvadoreño de Formación Profesional</option>
+          <option value="22">Instituto Salvadoreño de Rehabilitación Integral</option>
+          <option value="44">Instituto Salvadoreño de Transformación Agraria</option>
+          <option value="58">Instituto Salvadoreño de Turismo</option>
+          <option value="27">Instituto Salvadoreño del Seguro Social</option>
+          <option value="3">Instituto Salvadoreño para el Desarrollo de la Mujer</option>
+          <option value="18">Instituto Salvadoreño Para el Desarrollo Integral de la Niñez y la Adolescencia</option>
+          <option value="7">Lotería Nacional de Beneficencia</option>
+          <option value="43">Ministerio de Agricultura y Ganadería</option>
+          <option value="29">Ministerio de Economía</option>
+          <option value="16">Ministerio de Educación</option>
+          <option value="14">Ministerio de Gobernación</option>
+          <option value="6">Ministerio de Hacienda</option>
+          <option value="15">Ministerio de Justicia y Seguridad Publica</option>
+          <option value="11">Ministerio de la Defensa Nacional</option>
+          <option value="55">Ministerio de Medio Ambiente y Recursos Naturales</option>
+          <option value="47">Ministerio de Obras Pública, Transporte, Vivienda y Desarrollo Urbano</option>
+          <option value="10">Ministerio de Relaciones Exteriores</option>
+          <option value="20">Ministerio de Salud</option>
+          <option value="24">Ministerio de Trabajo y Previsión Social</option>
+          <option value="57">Ministerio de Turismo</option>
+          <option value="82">Oficina de Planificación del Área Metropolitana de San Salvador</option>
+          <option value="67">Policía Nacional Civil</option>
+          <option value="83">Procuraduría General de la República</option>
+          <option value="1">Registro Nacional de las Personas Naturales</option>
+          <option value="40">Superintendencia de Competencia</option>
+          <option value="37">Superintendencia del Sistema Financiero</option>
+          <option value="36">Superintendencia General de Electricidad y Telecomunicaciones</option>
+          <option value="92">Viceministerio de Transporte</option>
+        </select>
+      </div>
+      <div class="form-group">
+          <select id="delivery_way" class="form-control input-xlarge" name="information_request[delivery_way]" required>
+            <option value="">-- Forma de entrega de la informaci&oacute;n --</option>
+            <option value="cd">CD</option>
+            <option value="dvd">DVD</option>
+            <option value="usb">USB</option>
+            <option value="photocopy">Fotocopia</option>
+            <option value="certified_photocopy">Fotocopia certificada</option>
+            <option value="email">Correo electr&oacute;nico</option>
+            <option value="fax">FAX</option>
+            <option value="mail">Correo nacional</option>
+            <option value="oir_uaip">OIR-UAIP</option>
+            <option value="other">Otros</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <select id="notification_mode" class="form-control input-xlarge" name="information_request[notification_mode]" required>
+          <option value="">-- Notificarme --</option>
+          <option value="email">Correo Electr&oacute;nico</option>
+          <option value="phone">Tel&eacute;fono</option>
+          <option value="cellular">Celular</option>
+          <option value="fax">Fax</option>
+          <option value="mail">Correo Nacional</option>
+          <option value="oir_uaip">OIR-UAIP</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select id="entity_type" class="form-control input-xlarge" name="information_request[entity_type]" required>
+          <option value="">-- Tipo de persona --</option>
+          <option value="natural">Persona Natural</option>
+          <option value="legal">Persona Jur&iacute;dica</option>
+        </select>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend class="form-description" id="s2">
+        Informaci&oacute;n Personal
+      </legend>
+      <div class="form-group">
+        <input type="text" class="form-control" id="firstname" name="information_request[firstname]" placeholder="Nombres" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="lastname" name="information_request[lastname]" placeholder="Apellidos" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="age" name="information_request[age]" placeholder="Edad" required>
+      </div>
+      <div class="form-group">
+        <select id="gender" class="form-control input-xlarge" name="information_request[gender]" required>
+          <option value="">-- Sexo --</option>
+          <option value="F">Femenino</option>
+          <option value="M">Masculino</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select id="nationality" class="form-control input-xlarge" name="information_request[nationality]" required>
+          <option value="">-- Nacionalidad --</option>
+          <option value="salvadorian">Salvadore&ntilde;a</option>
+          <option value="foreign">Extranjera</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select id="residence" class="form-control input-xlarge" name="information_request[residence]" required>
+          <option value="">-- Residencia --</option>
+          <option value="el_salvador">El Salvador</option>
+          <option value="other">Otra</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" name="information_request[email]" placeholder="Correo Electr&oacute;nico" required>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend class="form-description" id="s3">
+        Informaci&oacute;n Personal
+      </legend>
+      <div class="form-group">
+        <input type="text" class="form-control" id="phone" name="information_request[phone]" placeholder="Tel&eacute;fono">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="cellular" name="information_request[cellular]" placeholder="Celular">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="fax" name="information_request[fax]" placeholder="Fax">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" id="address" name="information_request[address]" placeholder="Direcci&oacute;n" required></textarea>
+      </div>
+      <div class="form-group">
+        <select id="occupation_id" class="form-control input-xlarge" name="information_request[occupation_id]" data-validate="true" required>
+          <option value="">-- Profesi&oacute;n --</option>
+          <option value="2">Abogada/ Abogado</option>
+          <option value="1">Administradora/ Administrador</option>
+          <option value="3">Arquitecta/ Arquitecto</option>
+          <option value="4">Artista</option>
+          <option value="5">Asesora/ Asesor</option>
+          <option value="6">Asistente de oficina</option>
+          <option value="7">Auditora/ Auditor</option>
+          <option value="8">Comunicadora/ Comunicador Institucional</option>
+          <option value="9">Conserje</option>
+          <option value="10">Consultora/ Consultor</option>
+          <option value="11">Contadora/ Contador</option>
+          <option value="12">Directora/ Director</option>
+          <option value="13">Diseñadora/ Diseñador</option>
+          <option value="14">Docente</option>
+          <option value="15">Economista</option>
+          <option value="16">Empresaria/ Empresario</option>
+          <option value="17">Enfermera/ Enfermero</option>
+          <option value="18">Estudiante</option>
+          <option value="19">Gerente</option>
+          <option value="20">Informática/informático</option>
+          <option value="21">Ingeniera/ Ingeniero</option>
+          <option value="22">Investigador/Investigadora</option>
+          <option value="23">Médica/ Médico</option>
+          <option value="24">Mercadóloga/ Mercadólogo</option>
+          <option value="25">Motorista</option>
+          <option value="26">Operadora/ Operador</option>
+          <option value="27">Otros</option>
+          <option value="28">Periodista</option>
+          <option value="29">Promotora/Promotor Social</option>
+          <option value="30">Psicóloga/ Psicólogo</option>
+          <option value="31">Publicista</option>
+          <option value="32">Recepcionista</option>
+          <option value="33">Secretaria/Secretario</option>
+          <option value="34">Vendedora/ Vendedor (Comerciante)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <select id="educational_level" class="form-control input-xlarge" name="information_request[education_level]" required>
+          <option value="">-- Nivel Educativo --</option>
+          <option value="none">Sin educación formal</option>
+          <option value="primary">Primaria (Hasta sexto grado)</option>
+          <option value="secondary">Secundaria (Tercer ciclo)</option>
+          <option value="highschool">Bachillerato</option>
+          <option value="university">Universitario</option>
+          <option value="postgrade">Postgrado</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select id="state_id" class="form-control input-xlarge" data-validate="true">
+          <option value="">-- Departamento --</option>
+          <option value="1">Ahuachapán</option>
+          <option value="2">Cabañas</option>
+          <option value="3">Chalatenango</option>
+          <option value="4">Cuscatlán</option>
+          <option value="5">La Libertad</option>
+          <option value="6">La Paz</option>
+          <option value="7">La Unión</option>
+          <option value="8">Morazán</option>
+          <option value="9">San Miguel</option>
+          <option value="10">San Salvador</option>
+          <option value="11">San Vicente</option>
+          <option value="12">Santa Ana</option>
+          <option value="13">Sonsonate</option>
+          <option value="14">Usulután</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select id="city_id" class="form-control input-xlarge" data-validate="true">
+          <option value="">-- Municipio --</option>
+        </select>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend class="form-description" id="s4">
+        Adjuntar Documentos de Identidad
+      </legend>
+      <div class="form-group">
+        <select id="document_type" class="form-control input-xlarge" name="information_request[document_type]" required>
+          <option value="">-- Tipo de documento --</option>
+          <option value="dui">DUI</option>
+          <option value="passport">Pasaporte</option>
+          <option value="resident_card">Carné de residente</option>
+          <option value="student_card">Carné de estudiante</option>
+          <option value="minority_card">Carné de minoridad</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" , id="document_number" name="information_request[document_number]" placeholder="N&uacute;mero de documento" required>
+          Ej: 00000000-0
+      </div>
+      <div class="content">
+        <div class="action-area ch50">
+          <button class="button dh" id="getPhotoFromLibraryButton">Agregar Fotograf&iacute;a</button>
+        </div>
+        <div class="result-area ch50">
+          <div class="results">
+            <div class="desc"></div>
+            <img style="display:none;margin:5px auto;" id="smallImage" src="" />
+          </div>
+        </div>
+        <div class="separator"></div>
+      </div>
+      <br/>
+
+      <input id="terms" type="checkbox" value="0" name="information_request[terms]" required>
+      Al enviar esta solicitud, usted está aceptando los
+      <a class="terms-conditions" href="#myTerms" data-lightbox-type='inline'>términos de uso</a>
+    </fieldset>
+    <input id="submit-form" class="btn btn-submit" type="submit" value="Enviar Solicitud">       
+  </form>
+</div>
+<div id="myTerms">
+  <h3>Términos y Condiciones</h3>
+  <p>Los datos personales e información recabados en este portal serán protegidos, incorporados y tratados en la Secretaría de Participación Ciudadana, Transparencia y Anticorrupción de conformidad con lo dispuesto por la Ley de Acceso a la Información Pública y demás disposiciones aplicables. Dichos datos se recaban con fundamento en los artículos 24, 31, 32, 33, 34, 36 y 66 de la Ley citada, y se requieren para llevar a cabo los procedimientos de solicitud de datos personales y solicitud de información pública, por lo que únicamente serán utilizados para ello y para fines estadísticos. La Coordinación de Gobierno Abierto es la unidad administrativa responsable del presente sistema. El registro de los datos será por cada solicitud realizada, por lo que tendrán que registrarse nuevamente si vuelve a hacer uso de este Sistema. Si tiene dudas o comentarios, envíe un correo electrónico a <a href="contact.html">info@gobiernoabierto.gob.sv</a></p>
+</div>

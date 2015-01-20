@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/nivo-lightbox.css" />
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic/js/angular/angular-animate.min.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/app-route.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/nivo-lightbox.min.js"></script>
+
+
+  </head>
+  <body ng-app="gas_station_list">
+
+    <ion-side-menus>
+      <!-- Center content -->
+      <ion-side-menu-content>
+        <ion-header-bar align-title="center" class="bar-positive">
+          <a href="index.html" class="back-home load-spin"></a>
+          <h1 class="title">Gobierno Abierto</h1>
+          <button class="button button-icon" menu-toggle="right"><i class="icon ion-navicon"></i></button>
+        </ion-header-bar>      
+        <ion-content>
+          <!--<ion-refresher
+            pulling-text="Pull to refresh..."
+            on-refresh="doRefresh()">
+          </ion-refresher>-->
+          <ion-nav-view></ion-nav-view>
+
+        </ion-content>
+      </ion-side-menu-content>
+
+      <!-- Right menu -->
+      <ion-side-menu side="right">
+        <ul class="list menu">
+          <li>
+              <a href="index.html">
+                <img src="img/icons/icon-home.png" />
+                Inicio
+              </a>
+          </li>
+          <li>
+            <a href="index.html#/about" class="load-spin">
+              <img src="img/icons/icon-info.png" />
+              Acerca de
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" class="load-spin">
+              <img src="img/icons/icon-envelope.png" />
+              Cont&aacute;ctenos
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="window.open('http://www.gobiernoabierto.gob.sv','_system','location=yes');return false;">
+              <img src="img/icons/icon-logout.png" />
+              Visitar Gobierno Abierto
+            </a>           
+          </li>
+          <li>
+            <a href="#" onclick="window.open('http://infoutil.gobiernoabierto.gob.sv','_system','location=yes');return false;">
+              <img src="img/icons/icon-logout.png" />
+              Visitar InfoUtil
+            </a>           
+          </li>
+          <li>
+            <a href="configuration.html">
+              <img src="img/icons/icon-config.png" />
+              Configurar
+            </a>           
+          </li>
+        </ul>
+      </ion-side-menu>
+    </ion-side-menus>
+
+    <!-- 
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+
+
+<script type="text/javascript">
+  function ContentController($scope, $ionicSideMenuDelegate) {
+  $scope.toggleLeft = function() {
+    $ionicSideMenuDelegate.toggleLeft();
+  };
+}
+
+</script>
+</div>
+  </body>
+</html>

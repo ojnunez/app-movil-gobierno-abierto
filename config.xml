@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.gobiernoabierto" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Test Gobierno Abierto</name>
+  <description>
+    Una aplicacion para que hagas valer tu derecho a obtener informacion publica, hacer denuncias de servicios publicos o vehiculos nacionales en presunto mal uso, consultar precios de combustible segun tu ubicacione.  
+  </description>
+  <author email="hi@ionicframework" href="http://ionicframework.com/">
+    Gobierno Abierto Team
+  </author>
+  <content src="index.html"/>
+  <access origin="*.gobiernoabierto.gob.sv"/>
+  <access origin="*.google.com"/>
+  <access origin="*.googleapis.com"/>
+  <access origin="*.gstatic.com"/>
+
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="BackupWebStorage" value="none"/>
+
+  <icon src="www/img/logo.png" />
+
+  <preference name="SplashScreen" value="screen" />
+  <preference name="SplashScreenDelay" value="7000" />
+  <preference name="orientation" value="portrait" />
+  <platform name="android">
+    <splash src="resources/android/splash/drawable-port-ldpi.png" density="port-ldpi"/>
+    <splash src="resources/android/splash/drawable-port-mdpi.png" density="port-mdpi"/>
+    <splash src="resources/android/splash/drawable-port-hdpi.png" density="port-hdpi"/>
+    <splash src="resources/android/splash/drawable-port-xhdpi.png" density="port-xhdpi"/>
+  </platform>
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+</widget>
